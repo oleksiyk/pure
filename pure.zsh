@@ -23,6 +23,15 @@
 # \e[K  => clears everything after the cursor on the current line
 # \e[2K => clear everything on the current line
 
+# default colors:
+PURE_COLOR_GIT=${PURE_COLOR_GIT:-242}
+PURE_COLOR_PATH=${PURE_COLOR_PATH:-"blue"}
+PURE_COLOR_GIT_ARROWS=${PURE_COLOR_GIT_ARROWS:-"cyan"}
+PURE_COLOR_EXEC_TIME=${PURE_COLOR_EXEC_TIME:-"yellow"}
+PURE_COLOR_USERNAME=${PURE_COLOR_USERNAME:-242}
+PURE_COLOR_USERNAME_ROOT=${PURE_COLOR_USERNAME_ROOT:-"white"}
+PURE_COLOR_SYMBOL_OK=${PURE_COLOR_SYMBOL_OK:-"magenta"}
+PURE_COLOR_SYMBOL_ERROR=${PURE_COLOR_SYMBOL_ERROR:-"red"}
 
 # turns seconds into human readable time
 # 165392 => 1d 21h 56m 32s
