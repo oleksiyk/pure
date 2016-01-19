@@ -209,7 +209,9 @@ prompt_pure_precmd() {
 	prompt_pure_cmd_timestamp=
 
 	# check for git arrows
-	prompt_pure_check_git_arrows
+	if (( ${PURE_GIT_PULL:-1} )); then
+		prompt_pure_check_git_arrows
+	fi
 
 	# shows the full path in the title
 	prompt_pure_set_title 'expand-prompt' '%~'
